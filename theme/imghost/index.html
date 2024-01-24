@@ -118,13 +118,13 @@
     let img_input = document.getElementById('img_input');
     let area_base64 = document.getElementById('area_base64');
     
-    <!--function base64ToImage() {
+    function base64ToImage() {
       let base64 = area_base64.value;
       if (!base64.startsWith('data:image')) {
         base64 = 'data:image/jpeg;base64,' + base64
       }
       img_input.src = base64;
-    }-->
+    }
 
     function onFileChange(e) {
       loadImage(e.files[0]);
